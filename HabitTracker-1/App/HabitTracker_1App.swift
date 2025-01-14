@@ -12,6 +12,7 @@ struct HabitTracker_1App: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .modelContainer(for: Habit.self)
         }
     }
 }
